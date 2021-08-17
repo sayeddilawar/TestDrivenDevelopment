@@ -1,0 +1,49 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class Arithmetic
+{
+    //Test Case 1 : Addition
+    @Test
+    void toReturnSumOfTwoNumber()
+    {
+       ArithmeticsOperation aoperation =  new ArithmeticsOperation();
+       int ExpectedSum = 10 ;
+       int ActualSum = aoperation.sum(4,6); // Give int ActualSum = aoperation.sum(2,4) to fail the test case
+       assertEquals(ExpectedSum,ActualSum);
+    }
+    // Test Case 1 End
+
+    //Test Case 2 : Subtraction
+    @Test
+    void toReturnSubtractionOfGivenNumber()
+    {
+        ArithmeticsOperation aoperaton = new ArithmeticsOperation();
+        int ExpectedOutput = 4;
+        int ActualOutput = aoperaton.subtract(6 , 2); // Give int ActualOutput = aoperation.subtract(-2,4) to fail the test case
+        assertEquals(ExpectedOutput,ActualOutput);
+    }
+    // Test Case 2 End
+
+    //Test Case 3 : Multiplication
+    @Test
+    void toGetMultiplicationOfTwoNumbers()
+    {
+        ArithmeticsOperation obj = new ArithmeticsOperation();
+        int ExpectedOutput = 100 ;
+        int ActualOutput = obj.multiplication(10 , 10);
+        assertEquals(ExpectedOutput , ActualOutput );
+    }
+    // Test Case 3 End
+
+    //Test Case 4 : Multiplication
+    @Test
+    void toGetDivisionOfTwoNUmber()
+    {
+        ArithmeticsOperation obj = new ArithmeticsOperation();
+        int ExpectedOutput = 5;
+        int ActualOutput = obj.Division(100,20);
+        assertEquals(ExpectedOutput , ActualOutput);
+    }
+    // Test Case 4 End
+}
