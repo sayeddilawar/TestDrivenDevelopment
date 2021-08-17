@@ -1,0 +1,28 @@
+public class ArithmeticsOperation
+{
+    public int sum(int num1,int num2) {
+        return num1+num2;
+    }
+
+    public int subtract(int num1, int num2) {
+        return num1 - num2 ;
+    }
+
+    public int multiplication(int num1, int num2) {
+        return num1 * num2 ;
+    }
+
+    public int Division(int num1 , int num2)
+    {
+        int res;
+        if(num1 > num2)
+        {
+          res = num1/num2;
+        }
+        else
+        {
+           res = num2 / num1;
+        }
+        return res;
+    }
+}
